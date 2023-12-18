@@ -3,3 +3,9 @@ n1=$1
 n2=$2
 multple=$(($n1-$n2))
 echo " mul is :$multiple "
+echo "please enter user name"
+read -s Username
+echo "$Username"
+echo "please enter passwd"
+read -s passwd
+echo "$passwd"
