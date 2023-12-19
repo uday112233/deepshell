@@ -5,7 +5,7 @@
 DATE=$(date +%F)
 SCRIPT_NAME=$0
 LOGFILE=/tmp/$SCRIPT_NAME-$DATE.log
-echo "$DATE,$SCRIPT_NME,$LOGFILE"
+echo "$DATE,$SCRIPT_NAME,$LOGFILE"
 echo $0
 
 R="\e[31m"
@@ -30,5 +30,5 @@ then
 # else
 #     echo "INFO:: You are root user"
 fi
-yum install mysql-community-server &>>$LOGFILE
-VALIDATE $? "Installing MySQL"
+yum install posddtfix -y &>>$LOGFILE
+VALIDATE $? "Installing postfix"
