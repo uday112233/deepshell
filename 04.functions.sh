@@ -30,5 +30,5 @@ then
 # else
 #     echo "INFO:: You are root user"
 fi
-yum install posddtfix -y &>>$LOGFILE
+yum install postfix -y &>>$LOGFILE
 VALIDATE $? "Installing postfix"
