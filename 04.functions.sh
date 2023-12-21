@@ -32,3 +32,4 @@ then
 fi
 yum install postfix -y &>>$LOGFILE
 VALIDATE $? "Installing postfix"
+#after validate  arg1 arg2
